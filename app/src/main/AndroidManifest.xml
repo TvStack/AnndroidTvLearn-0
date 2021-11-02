@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codingdev.tv.learnning">
+
+    <uses-feature android:name="android.software.leanback"
+        android:required="false" />
+
+    <!--这个属性必须的设置，否则你的应用将不会出现在TV设备的Google Play里-->
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidTVLearning"
+        android:banner="@mipmap/app_banner_sample_app">
+        <activity android:name=".ui.activity.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
