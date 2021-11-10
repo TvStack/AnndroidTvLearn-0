@@ -40,4 +40,8 @@ dependencies {
 
     // leanback-tab is an add-on that provides customized TabLayout to be used as the top navigation bar.
     implementation "androidx.leanback:leanback-tab:1.1.0-beta01"
+    //gson for parse json.
+    implementation "com.google.code.gson:gson:2.8.2"
+    //glide for image display.
+    implementation 'com.github.bumptech.glide:glide:4.0.0-RC1'
 }
